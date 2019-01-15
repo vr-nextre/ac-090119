@@ -5,7 +5,14 @@ import java.util.Scanner;
 
 public class Moneta {
 
+    private static boolean DEBUG = false;
+
     public static void main(String[] args) {
+
+
+        if(args.length>0 && args[0].equalsIgnoreCase("-d"))
+            DEBUG=true;
+
 
         Random r = new Random();
         int giocate = 0;
@@ -19,8 +26,15 @@ public class Moneta {
 
             //lancio la moneta
             String faccia = r.nextBoolean() ? "testa" : "croce";
-            //System.out.println("Moneta lanciata: " + faccia);
 
+
+            if(DEBUG){
+                System.out.println("----------------------------------");
+                System.out.println("Moneta lanciata: " + faccia);
+                System.out.println("giocate: " + giocate);
+                System.out.println("vittorie: " + vincite);
+                System.out.println("----------------------------------");
+            }
 
             boolean errore_di_lettura = true;
             String scelta="";

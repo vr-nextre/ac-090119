@@ -72,6 +72,11 @@ public class Persona {
                 ", eta=" + eta +
                 '}';
     }
+
+    @Override
+    public Persona clone() {
+        return new Persona(this.getNome(), this.getCognome(), this.getTelefono(), this.getEmail(), this.getEta());
+    }
 }//end class
 
 
