@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         ListaDinamicaInt l = new ListaDinamicaInt();
 
         l.add(3);
@@ -18,6 +19,11 @@ public class Main {
             l.remove(0);
             System.out.println(l);
         }
+
+
+
+
+
 
 
     }//end main
