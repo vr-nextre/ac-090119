@@ -1,19 +1,19 @@
-package it.nextre.academy.pr001.es4_4;
+package it.nextre.academy.pr001.generici;
 
 import java.util.Arrays;
 
-public class ListaDinamicaInt {
+public class ListaDinamicaGen<T>{
 
-    private int[] mem;
+    private T[] mem;
     //private int idx=0;
 
-    public ListaDinamicaInt() {
-        this.mem = new int[0];
+    public ListaDinamicaGen() {
+        this.mem = (T[])new Object[0];
     }
 
-    public void add(int x){
+    public void add(T x){
         //if (mem.length==idx){
-            int[] swap = new int[this.mem.length+1];
+            T[] swap = (T[])new Object[this.mem.length+1];
             for(int i = 0;i<this.mem.length;i++){
                 swap[i]=this.mem[i];
             }
@@ -22,23 +22,22 @@ public class ListaDinamicaInt {
         //}
     }
 
-    public int get(int pos) {
+    public T get(int pos) {
         if(pos>=0 && pos<this.mem.length){
             return this.mem[pos];
         }
-        //todo rivedere con eccezione
         throw new RuntimeException("Invalid position in ListaDinamica");
         //throw new RuntimeException("Invalid position");
         //return null;  //perchè torno un oggetto
     }
 
-    public int[] getAll(){
+    public T[] getAll(){
         return this.mem;
     }
 
     public void remove(int pos){
         if(pos>=0 && pos<this.mem.length){
-            int[] swap = new int[this.mem.length-1];
+            T[] swap = (T[])new Object[this.mem.length+1];
             for (int i = 0; i < this.mem.length; i++) {
                 if(i<pos){
                     swap[i]=this.mem[i];
@@ -58,7 +57,7 @@ public class ListaDinamicaInt {
 
     @Override
     public String toString() {
-        return "ListaDinamicaInt{" +
+        return "ListaDinamicaGen{" +
                 "mem=" + Arrays.toString(mem) +
                 '}';
     }
