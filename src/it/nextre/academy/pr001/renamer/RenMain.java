@@ -2,6 +2,7 @@ package it.nextre.academy.pr001.renamer;
 
 public class RenMain {
 
+
     static String nomi =
             "" +
                     "1.1 Introduction\t\n" +
@@ -60,19 +61,36 @@ public class RenMain {
                     "11.3 Submit queries and read results from the database\t\n" +
                     "12.1 Read and set the locale by using the Locale object\t\n" +
                     "12.2 Create and read a Properties file\t\n" +
-                    "12.3 Build a resource bundle for each locale and load a resource bundle in an app" +
+                    "12.3 Build a resource bundle for each locale and load a resource bundle in an app\t\n" +
                     "";
 
 
     /*
     *
     * Creare in una cartella tanti file quante le lezioni di ogni capitolo chiamandoli
-    * S1L1.mp4
-    * s{numeroargomento}L{numeroLezione}.mp4
+    * s{numeroArgomento}L{numeroLezione}.mp4
+    * esempio: S1L1.mp4
+    *
     * leggendo il contenuto dalla stringa nomi
     *
     * Poi rinominare i file con il numero dell'argomento e della lezione relativa.
     *
     * */
+
+    /*
+    Relativo
+        ./cartella/sootocartella/file.ext
+
+    Assoluto
+        C:\Academy\academy5\pr001\cartella\sottocartella\file.ext
+    */
+
+
+
+
+
+
+
+
 
 }//end class
