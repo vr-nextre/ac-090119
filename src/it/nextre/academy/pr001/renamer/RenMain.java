@@ -201,8 +201,13 @@ public class RenMain {
             descrizione = descrizione.replace(".", "_");
             descrizione = descrizione.replace("!", "_");
             descrizione = descrizione.replace("?", "_");
+            descrizione = descrizione.replace("*", "_");
+            descrizione = descrizione.replace("|", "_");
             descrizione = descrizione.replace("<", "_");
             descrizione = descrizione.replace(">", "_");
+            descrizione = descrizione.replace("/", "_");
+            descrizione = descrizione.replace(":", "_");
+            descrizione = descrizione.replace("\"", "_");
             descrizione = descrizione.replace(",", " ");
             descrizione = descrizione.replace("  ", " ");
             //System.out.println("[code]= "+codice+"\t  [descrizione]= "+descrizione );
