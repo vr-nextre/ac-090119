@@ -83,6 +83,10 @@ public class RenMain {
      *
      * Poi rinominare i file con il numero dell'argomento e della lezione relativa.
      *
+     *
+     * Variante: Provare a fare l'esercizio con mappe e/o con una lista di oggetto che contenga tutte le informazioni
+     *           necessarie
+     *
      * */
 
     /*
