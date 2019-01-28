@@ -1,0 +1,6 @@
+package it.nextre.academy.pr001.enumerations;
+
+public enum Weather {
+   SOLE, NUVOLO, PIOGGIA, VENTOSO, NEVE, NEVE_ABBONDANTE, TEMPORALE, TIFONE, URAGANO, GRANDINE_LEGGERA, GRANDINE_PESANTE, PIOGGIA_ABBONDANTE;
+
+}//end class

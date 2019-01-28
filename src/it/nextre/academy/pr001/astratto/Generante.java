@@ -1,11 +1,13 @@
 package it.nextre.academy.pr001.astratto;
 
+@FunctionalInterface
 public interface Generante {
     //per le interfacce la visibilità è public di standard
     //tutti i metodi sono dichiarati astratti
     //se un metodo dichiara un comportamento allora dovrà essere marcato come default
 
     String calcola();
+
     default String getVersion(){
         return "undefined";
     };
