@@ -9,6 +9,9 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class GaraDiNuoto {
+
+    private static class P{};
+
     public static void main(String[] args) {
 
         List<Nuotatore> partecipanti = new ArrayList<>();
@@ -95,7 +98,7 @@ class Nuotatore {
     }
 
 
-    private String formattaDuration(Duration duration){
+    public static String formattaDuration(Duration duration){
         return String.format("%s days and %sh %sm %ss %sms",
                 duration.toDays(),
                 duration.toHours() - TimeUnit.DAYS.toHours(duration.toDays()),

@@ -5,6 +5,7 @@ import it.nextre.academy.pr001.es4_4.ListaDinamicaInt;
 import it.nextre.academy.pr001.utility.Lettore;
 
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.function.BiFunction;
@@ -13,7 +14,7 @@ public class Ecc {
 
     public static void main(String[] args) throws RuntimeException, ArrayIndexOutOfBoundsException {
 
-        Set<Persona> p = new TreeSet<>();
+        Set<Persona> p = new HashSet<>();
         p.add(new Persona("Mario","Rossi","","",1));
         p.add(new Persona("Marione","Rossi","","",10));
         System.out.println(p);

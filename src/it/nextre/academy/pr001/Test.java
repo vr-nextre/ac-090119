@@ -1,5 +1,8 @@
 package it.nextre.academy.pr001;
 
+import java.time.Duration;
+import java.time.format.DateTimeFormatter;
+
 public class Test {
 
 
@@ -27,7 +30,19 @@ public class Test {
 //        Flags f = Flags.TRUE;
 //        Flags f1 = Flags.FALSE;
 
-        System.out.println(isPowerOf2(10));
+        //System.out.println(isPowerOf2(10));
+
+
+
+
+        Duration d = Duration.ofMillis(16342621);
+        System.out.printf("\npos: %-5s pilota: %-20s tempo: %-20s", "1", "Mariolino Rossi", "01:04:59:635");
+        System.out.printf("\npos: %-5s pilota: %-20s tempo: %-20s", "123", "Mariolino Rossiii", "01:04:59:635");
+        System.out.printf("\npos: %-5s pilota: %-20s tempo: %-20s", "12345", "Mariolino bu", Nuotatore.formattaDuration(d));
+
+
+
+
 
     }//end main
 
@@ -52,3 +67,13 @@ public class Test {
 
 
 }//end class
+
+
+
+
+class TestClass{
+    public static void main(String args[]){
+        RuntimeException e = null;
+        throw e;
+    }
+}
